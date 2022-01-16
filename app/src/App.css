@@ -1,6 +1,11 @@
 .App {
   height: 100vh;
-  background-color: rgb(20, 20, 20);
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
   overflow: scroll;
   text-align: center;
   overflow: hidden;
@@ -14,6 +19,7 @@
   padding: 0 30px 0 30px;
   color: white;
   position: relative;
+
   /* background-color: #35aee2; */
 }
 
@@ -69,6 +75,8 @@
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   margin-left: 10px;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
+    drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .footer-container {
@@ -93,7 +101,7 @@
   color: white;
 }
 
-.connected-container input[type='text'] {
+.connected-container input[type="text"] {
   display: inline-block;
   padding: 10px;
   width: 50%;
